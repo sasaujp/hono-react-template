@@ -7,20 +7,19 @@ export const Index: React.FC = () => {
 
   return (
     <div className="flex h-dvh place-content-center place-items-center">
-      <button
+      <Button
         className="w-8 border"
         onClick={() => setCount((count) => count - 1)}
       >
         -1
-      </button>
+      </Button>
       <span className="grid w-8 place-items-center">{count}</span>
-      <button
+      <Button
         className="w-8 border"
         onClick={() => setCount((count) => count + 1)}
       >
         +1
-      </button>
-      <Button>aba</Button>
+      </Button>
     </div>
   );
 };

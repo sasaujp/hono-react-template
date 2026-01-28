@@ -1,8 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 import { config } from "dotenv";
-
 config();
 
-const prisma = new PrismaClient();
+const prisma = new PrismaClient({
+  accelerateUrl: process.env.DATABASE_URL,
+});
 
 export default prisma;
