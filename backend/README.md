@@ -1,4 +1,5 @@
 ```
+npx prisma migrate dev
 npm install
 npm run dev
 ```
